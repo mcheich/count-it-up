@@ -16,9 +16,14 @@ public class CountItUp {
 			I just counted to 8!
 		 */
 		
+		int userInput = getInput();
+		String count = countUp(userInput);
+		System.out.println(count);
 		
-		System.out.println(countUp(getInput()));
-		
+		/* I am tempted to put the above all on one line:
+		 * 
+		 * System.out.println(countUp(getInput()));
+		 */
 		
 	}
 
