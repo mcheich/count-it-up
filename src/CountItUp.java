@@ -16,8 +16,8 @@ public class CountItUp {
 			I just counted to 8!
 		 */
 		
-		Scanner input = new Scanner(System.in);
-		System.out.println("Enter a positive number.");
+		
+		System.out.println(countUp(getInput()));
 		
 		
 	}
@@ -31,7 +31,19 @@ public class CountItUp {
 			output += " " + Integer.toString(counter);
 			counter++;
 		}
+		System.out.println("I counted to " + num);
 		return output;
+
+	}
+
+	public static Integer getInput() {
+		
+		Scanner input = new Scanner(System.in);
+		System.out.println("Enter a positive number.");
+		int output = input.nextInt();
+		input.close();
+		
+		return output; 
 
 	}
 
